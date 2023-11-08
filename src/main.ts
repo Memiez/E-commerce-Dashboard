@@ -28,7 +28,7 @@ router.beforeEach((toRoute, fromRoute, next) => {
   const documentTitle =
     toRoute?.meta && toRoute?.meta?.title
       ? toRoute?.meta?.title
-      : "locofy-vue-project";
+      : "dashboard-vue-project";
   window.document.title = documentTitle;
   if (toRoute?.meta?.description) {
     addMetaTag(toRoute?.meta?.description);
